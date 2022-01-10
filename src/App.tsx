@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import * as ReactDnD from './components/ReactDnD';
-import * as Knight from './components/ReactDnD/Knight';
+import { ReactDnD } from './components/ReactDnD';
 
 function Hoge() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Routes>
           <Route path="/hoge" element={<Hoge />} />
           <Route path="/react-dnd" element={<ReactDnD />} />
-          <Route path="/knight" element={<Knight />} />
         </Routes>
       </Router>
     </div >

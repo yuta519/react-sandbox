@@ -1,9 +1,8 @@
-// import ReactDOM from 'react-dom'
-import Knight from './Knight'
+import React from "react"
 
-export const ReactDnD: React.FunctionComponent = () => {
-  return (<Knight />)
-  // ReactDOM.render(<Knight />, document.getElementById('root'))
+export const ReactDnD: React.FC = () => {
+  const horse = "♘"
+  return (
+    <span>{horse}</span>
+  )
 }
-
-export default Knight
