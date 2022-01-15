@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export default function StyledComponent() {
+type Props = {
+  item: string
+}
+
+export default function StyledComponent(
+  item: Props
+  ) {
   //タイトル
   const Title = styled.h1`
     font-size: 1.5em;
@@ -14,11 +20,12 @@ export default function StyledComponent() {
     background: papayawhip;
   `;
 
+  console.log(item)
   return (
-    <Wrapper>
-      <Title>
-        Hello World!
-      </Title>
-    </Wrapper>
+    <>
+      <Wrapper>
+        <Title>Hello World! {item['item']}</Title>
+      </Wrapper>
+    </>
   );
 }

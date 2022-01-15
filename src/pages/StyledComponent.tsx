@@ -1,24 +1,7 @@
-import styled from "styled-components";
+import StyledComponent from "../components/StyledComponent";
 
-export default function StyledComponent() {
-  //タイトル
-  const Title = styled.h1`
-    font-size: 1.5em;
-    text-align: center;
-    color: palevioletred;
-  `;
-
-  //ラッパー
-  const Wrapper= styled.section`
-    padding: 4em;
-    background: papayawhip;
-  `;
-
+export default function StyledComponentPage() {
   return (
-    <Wrapper>
-      <Title>
-        Hello World!
-      </Title>
-    </Wrapper>
+    <StyledComponent item="hoge" />
   );
 }
