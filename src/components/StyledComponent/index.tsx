@@ -4,9 +4,7 @@ type Props = {
   item: string
 }
 
-export default function StyledComponent(
-  item: Props
-  ) {
+export default function StyledComponent(item: Props) {
   //タイトル
   const Title = styled.h1`
     font-size: 1.5em;
@@ -22,10 +20,8 @@ export default function StyledComponent(
 
   console.log(item)
   return (
-    <>
       <Wrapper>
         <Title>Hello World! {item['item']}</Title>
       </Wrapper>
-    </>
   );
 }
